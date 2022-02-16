@@ -1,7 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
 import Link from '@mui/material/Link';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import { HashLink } from 'react-router-hash-link';
 import { Contact, Projects, AboutMe } from '../../components';
 import { borderRadius } from '@material-ui/system';
@@ -11,9 +11,10 @@ import Resume from '../../assets/images/josephresume.png'
 import LinkedIn from '../../assets/images/linkedin.png';
 import Github from '../../assets/images/github.png';
 import beach from '../../assets/images/beach.jpg';
-import { createTheme, Theme } from '@material-ui/core/styles';
+import { createMuiTheme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles'
 
-const theme: Theme = createTheme();
+const theme: Theme = createMuiTheme();
 
 interface Props {
     title: string;

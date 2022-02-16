@@ -12,7 +12,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import Typography from '@mui/material/Typography';
 import LinkIcon from '@mui/icons-material/Link';
 import { CardActionArea } from '@mui/material';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
 import { padding } from '@mui/system';
 import InvestCalc from '../../assets/images/investcalc.png';
 import Crypto from '../../assets/images/cryptotracker.png';

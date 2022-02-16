@@ -1,11 +1,12 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles'
 import { padding } from '@mui/system';
-import { createTheme, Theme } from '@material-ui/core/styles';
+import { createMuiTheme } from '@mui/material/styles';
 
-const theme: Theme = createTheme();
+const theme: Theme = createMuiTheme();
 
 
 const useStyles = makeStyles({
