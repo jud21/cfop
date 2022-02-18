@@ -20,6 +20,8 @@ import Dealer from '../../assets/images/dealer.png';
 import ShoppingCart from '../../assets/images/shoppingcart.jpg';
 import Parking from '../../assets/images/parking.jpg';
 import placeholderImage from '../../assets/images/placeholder.png';
+import Weather from '../../assets/images/weatherpic.jpeg';
+import myPort from '../../assets/images/portsite.png';
 import { styled } from '@mui/material/styles';
 
 
@@ -49,9 +51,12 @@ const useStyles = makeStyles({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center'
-        // alignItems: 'center'
 
     },
+    proj: {
+        marginBottom: '5vh',
+        alignItems: 'center'
+    }
 });
 
 const cardStyles = {
@@ -72,13 +77,13 @@ export const Projects = (props: Props) => {
     return (
         <div id="projects" className={classes.root}>
 
-            {/*///////////////////////////////////////////////////////// My Portfolio Site ////////////////////////////////////////////////////////////////  */}
+            {/* My Portfolio Site */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={placeholderImage}
+                        image={myPort}
                         alt="Project"
                     />
                     <CardContent>
@@ -113,7 +118,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*///////////////////////////////////////////////////////// Crypto Portfolio Tracker ////////////////////////////////////////////////////////////////  */}
+            {/* Crypto Portfolio Tracker */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
@@ -155,13 +160,13 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*///////////////////////////////////////////////////////// Weather App ////////////////////////////////////////////////////////////////  */}
+            {/* Weather App */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={placeholderImage}
+                        image={Weather}
                         alt="Project"
                     />
                     <CardContent>
@@ -196,7 +201,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*///////////////////////////////////////////////////////// Investment Calculator ////////////////////////////////////////////////////////////////  */}
+            {/*Investment Calculator */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
@@ -237,7 +242,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*///////////////////////////////////////////////////////// Parking Garage ////////////////////////////////////////////////////////////////  */}
+            {/* Parking Garage */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
@@ -278,7 +283,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*///////////////////////////////////////////////////////// Shopping Cart ////////////////////////////////////////////////////////////////  */}
+            {/* Shopping Cart */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
@@ -319,7 +324,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*///////////////////////////////////////////////////////// Car Dealership Database ////////////////////////////////////////////////////////////////  */}
+            {/* Car Dealership Database */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia

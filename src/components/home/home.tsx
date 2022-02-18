@@ -8,7 +8,7 @@ import { borderRadius } from '@material-ui/system';
 import Grid from '@mui/material/Grid';
 import JD from '../../assets/images/JD.jpeg';
 import Resume from '../../assets/images/josephresume.png'
-import LinkedIn from '../../assets/images/linkedin.png';
+import LinkedIn from '../../assets/images/link3.png';
 import Github from '../../assets/images/github.png';
 import beach from '../../assets/images/beach.jpg';
 import { createMuiTheme } from '@mui/material/styles';
@@ -78,7 +78,6 @@ const useStyles = makeStyles({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        // width: '100%',
         minHeight: '80%',
         paddingBottom: '20px',
         display: 'flex',
@@ -100,7 +99,7 @@ const useStyles = makeStyles({
         height: '300px',
         width: '300px',
         borderRadius: '200%',
-        borderColor: 'rgba(255,255,255,1)',
+        borderColor: 'white',
         border: ' solid',
         borderWidth: '10px'
     },
@@ -136,11 +135,11 @@ const useStyles = makeStyles({
         height: '50px',
         borderWidth: '1px',
         borderStyle: 'solid',
+        borderColor: 'white',
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
         margin: '15px'
-        // marginTop: '30px'
     },
     LinkedInLogo: {
         width: '25px'
@@ -206,12 +205,12 @@ export const Home = (props: Props) => {
                                         <div className={classes.logo_adjust}>
                                             <div className={classes.Logos}>
                                                 <a href="https://www.linkedin.com/in/joseph-fallon-0763b95a/" target="_blank">
-                                                    <img src={LinkedIn} alt="" className={classes.LinkedInLogo} />
+                                                    <img src={LinkedIn} alt="LinkedIn Logo" className={classes.LinkedInLogo} />
                                                 </a>
                                             </div>
                                             <div className={classes.Logos}>
                                                 <a href="https://github.com/jud21" target="_blank">
-                                                    <img src={Github} alt="" className={classes.GitHubLogo} />
+                                                    <img src={Github} alt="GitHub Logo" className={classes.GitHubLogo} />
                                                 </a>
                                             </div>
                                         </div>
@@ -219,7 +218,7 @@ export const Home = (props: Props) => {
                                             <Button
                                                 variant="outlined"
                                                 size="large"
-                                                style={{ border: '2px solid', textTransform: "none", fontSize: "14pt", width: "160px", color: 'black' }}
+                                                style={{ border: '2px solid', borderColor: 'white', textTransform: "none", fontSize: "14pt", width: "160px", color: 'black' }}
                                             >
                                                 My Resume
                                             </Button>
@@ -228,7 +227,7 @@ export const Home = (props: Props) => {
                                 </div>
                             </Grid>
                             <Grid item sm={12} md={7} className={classes.about_text} sx={{ p: "10%" }}>
-                                <b>Hi, I'm JD! I am a Full-stack Software Engineer with a passion for finance and experience in business developement.</b>
+                                <b>Hi. I'm JD. I am a Full-stack Software Engineer with a passion for finance and experience in business developement.</b>
                             </Grid>
                         </Grid>
                     </div>
