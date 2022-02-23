@@ -13,6 +13,7 @@ import nodemailer, { Transporter } from 'nodemailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 import { Props } from 'next/script';
 import { url } from 'inspector';
+// import sender from '../api/contact'
 
 const theme: Theme = createMuiTheme();
 
@@ -61,95 +62,89 @@ const useStyles = makeStyles({
     }
 
 });
-/**
-export default async function async(
-    req: NextApiRequest,
-    res: NextApiResponse
-  ) {
-    try {
-        let transporter: Transporter = nodemailer.createTransport({
-        	host: 'smtp.gmail.com',
-        	port: 465,
-            auth: {
-              user: 'fakesender38@gmail.com',
-              pass: 'simplepassword',
-            },
-      	});
-        let options = {
-            from: `${req.body.email}`,
-            to: 'joe.d.fallon@gmail.com',
-            subject: `${req.body.subject}`,
-            text: `${req.body.message}`,
-      	};
-       let result: SMTPTransport.SentMessageInfo = 
-       await transporter.sendMail(options);
-       res.status(200);
-    }
-    catch(error){
-    	res.status(400);
-    }
-}
 
-interface Props {
-    title: string;
-}
-*/
-export const Contact = (props: Props) => {
+<a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+  Send mail with cc, bcc, subject and body
+</a>
 
-    const [form, setForm] = useState({});
 
-    const handleChange = (
-        e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
-      ) => {
-        const { value, name } = e.target;
-        setForm({ ...form, [name]: value });
-      }
-      const handleSubmit = async (e: SyntheticEvent) => {
-        e.preventDefault();
-      };
 
-    const classes = useStyles();
-    return (
-        <div id="contact" className={classes.root}>
-            <h2 className={classes.new}>Contact me</h2>
-            <p className={classes.para}>Reach out with any inquiries or opportunities and I'll respond as soon as possible.</p>
-            <form action="" className={classes.form}>
-                <div className={classes.nameEmail}>
-                    <TextField
-                        id="Name"
-                        label="Name"
-                        variant="outlined"
-                        onChange={handleChange}
-                        className={classes.nameEmailFields}
-                    />
-                    <TextField
-                        id="Email"
-                        label="Email"
-                        variant="outlined"
-                        onChange={handleChange}
-                        className={classes.nameEmailFields}
-                    />
-                </div>
-                <TextField
-                    id="Subject"
-                    label="Subject"
-                    variant="outlined"
-                    onChange={handleChange}
-                />
-                <TextField
-                    id="Message"
-                    label="Message"
-                    multiline
-                    rows={4}
-                    maxRows={5}
-                    onChange={handleChange}
-                />
-                <Button variant="contained" onClick={handleSubmit}>Submit</Button>
-                <div className={classes.footer}>
-                    <p>© 2022 Joseph Fallon. All Rights Reserved</p>
-                </div>
+// export const Contact = (props: Props) => {
 
-            </form>
-        </div>
-    )
-}
+//     const [form, setForm] = useState({});
+
+//     const handleChange = (
+//         e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
+//       ) => {
+//         const { value, name } = e.target;
+//         setForm({ ...form, [name]: value });
+//         console.log(form)
+//       }
+//     //   const handleSubmit = async (e: SyntheticEvent) => {
+//     //     e.preventDefault();
+//     //     try {
+//     //         let res = await axios.post(`/api/contact`, form);
+//     //         alert(`Email Sent! Thank You.`);
+//     //     } catch (error) {
+//     //         alert(`An error occured. Please Try Again.`);
+//     //     }
+//         const handleSubmit = async (e: SyntheticEvent) => {
+//             e.preventDefault();
+//             try {
+//                 let res = await sender(form[`name`], form.email, form.subject, form.message)
+//                 alert(`Email Sent! Thank You.`);
+//             } catch (error) {
+//                 alert(`An error occured. Please Try Again.`);
+//             }
+// };
+    
+
+//     const classes = useStyles();
+//     return (
+//         <div id="contact" className={classes.root}>
+//             <h2 className={classes.new}>Contact me</h2>
+//             <p className={classes.para}>Reach out with any inquiries or opportunities and I'll respond as soon as possible.</p>
+//             <form action="" className={classes.form}>
+//                 <div className={classes.nameEmail}>
+//                     <TextField
+//                         id="Name"
+//                         label="Name"
+//                         variant="outlined"
+//                         onChange={handleChange}
+//                         className={classes.nameEmailFields}
+//                         name = "name"
+//                     />
+//                     <TextField
+//                         id="Email"
+//                         label="Email"
+//                         variant="outlined"
+//                         onChange={handleChange}
+//                         className={classes.nameEmailFields}
+//                         name = "email"
+//                     />
+//                 </div>
+//                 <TextField
+//                     id="Subject"
+//                     label="Subject"
+//                     variant="outlined"
+//                     onChange={handleChange}
+//                     name = 'subject'
+//                 />
+//                 <TextField
+//                     id="Message"
+//                     label="Message"
+//                     multiline
+//                     rows={4}
+//                     maxRows={5}
+//                     onChange={handleChange}
+//                     name = "message"
+//                 />
+//                 <Button variant="contained" onClick={handleSubmit}>Submit</Button>
+//                 <div className={classes.footer}>
+//                     <p>© 2022 Joseph Fallon. All Rights Reserved</p>
+//                 </div>
+
+//             </form>
+//         </div>
+//     )
+// }
