@@ -10,7 +10,9 @@ import JD from '../../assets/images/JD.jpeg';
 import Resume from '../../assets/images/josephresume.png'
 import LinkedIn from '../../assets/images/link3.png';
 import Github from '../../assets/images/github.png';
-import beach from '../../assets/images/beach.jpg';
+import space from '../../assets/images/newbackground.png';
+import pnglogo from '../../assets/images/pnglogo.png'
+import youtube from '../../assets/images/youtube.png'
 import { createMuiTheme } from '@mui/material/styles';
 import { Theme } from '@mui/material/styles'
 
@@ -26,25 +28,28 @@ const useStyles = makeStyles({
         padding: '0',
         margin: '0',
         fontFamily: "'Montserrat', sans-serif",
-        overflow: 'visible'
+        overflow: 'visible',
     },
     navbar: {
         position: 'sticky',
         top: '0',
         alignSelf: 'flex-start',  
-        marginBottom: '16px',    
+        marginBottom: '16px',
+        backgroundColor: '#12214b'
     },
     navbar_container: {
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     logo: {
         padding: '1rem 1rem 1rem 1rem',
         [theme.breakpoints.down('sm')]: {
             display: 'flex',
             justifyContent: 'space-around'
-        }
+        },
+        color: '#ff6600',
+        fontFamily: 'Chalkduster'
     },
     logo_a: {
         color: 'rgb(28,24,22)'
@@ -59,9 +64,10 @@ const useStyles = makeStyles({
     nav_a: {
         display: 'block',
         padding: '1em',
-        color: 'black',
+        color: '#ff6600',
         textDecoration: 'none',
-        fontSize: '14pt'
+        fontSize: '14pt',
+        fontFamily: 'Chalkduster'
     },
     navigation: {
         display: 'flex',
@@ -74,7 +80,7 @@ const useStyles = makeStyles({
         position: 'absolute'
     },
     main_text: {
-        backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.4)), url(${beach})`,
+        backgroundImage: `url(${space})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -89,19 +95,29 @@ const useStyles = makeStyles({
         color: 'rgba(50,50,50,1)'
     },
     my_photo: {
-        backgroundImage: `url(${JD})`,
+        color: '#ff6600',
+        fontFamily: 'Chalkduster',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         position: 'relative',
         display: 'flex',
         justifyContent: 'center',
-        height: '300px',
-        width: '300px',
-        borderRadius: '200%',
-        borderColor: 'white',
-        border: ' solid',
-        borderWidth: '10px'
+        height: '150px',
+        width: '250px'
+    },
+    my_photo2: {
+        color: '#ff6600',
+        fontFamily: 'Chalkduster',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center',
+        height: '250px',
+        width: '250px',
+        marginBottom: '20vh'
     },
     pro_photo: {
         display: 'flex',
@@ -114,7 +130,8 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center',
         padding: '10%',
-        fontSize: '22pt'
+        fontSize: '22pt',
+        color: '#ff6600'
     },
     links_resume: {
         display: 'flex',
@@ -146,6 +163,18 @@ const useStyles = makeStyles({
     },
     GitHubLogo: {
         width: '25px'
+    },
+    tube: {
+        borderRadius: '30px 30px 30px 30px',
+        width: '50px',
+        height: '50px',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: 'white',
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        margin: '15px'
     }
 });
 
@@ -158,7 +187,7 @@ export const Home = (props: Props) => {
                 <Grid container className={classes.navbar_container}>
                     <Grid item xs={12} sm={12} md={4} className={classes.logo}>
                         <h1>
-                            Joseph Fallon
+                            Crypto For Old People
                         </h1>
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
@@ -172,17 +201,17 @@ export const Home = (props: Props) => {
                             </Grid>
                             <Grid item xs={12} sm={12} md="auto" className={classes.link_in_grid}>
                                 <HashLink
-                                    to='/#projects'
-                                    className={classes.nav_a}
-                                    scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
-                                >Projects</HashLink>
-                            </Grid>
-                            <Grid item xs={12} sm={12} md="auto" className={classes.link_in_grid}>
-                                <HashLink
                                     to='/#aboutme'
                                     className={classes.nav_a}
                                     scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
-                                >About Me</HashLink>
+                                >Our Mission</HashLink>
+                            </Grid>
+                            <Grid item xs={12} sm={12} md="auto" className={classes.link_in_grid}>
+                                <HashLink
+                                    to='/#projects'
+                                    className={classes.nav_a}
+                                    scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
+                                >Episodes</HashLink>
                             </Grid>
                             <Grid item xs={12} sm={12} md="auto" className={classes.link_in_grid}>
                                 <HashLink
@@ -200,8 +229,16 @@ export const Home = (props: Props) => {
                         <Grid container spacing={2}>
                             <Grid item sm={12} md={5}>
                                 <div className={classes.pro_photo}>
-                                    <div className={classes.my_photo}></div>
-                                    <div className={classes.links_resume}>
+                                    <div className={classes.my_photo}>
+                                        <h1>Crypto moves pretty fast.
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <h1 className={classes.my_photo2}>If you don't stop and watch Crypto For Old People every Sunday, 
+                                            you could miss it.
+                                        </h1>
+                                    </div>
+                                    {/* <div className={classes.links_resume}>
                                         <div className={classes.logo_adjust}>
                                             <div className={classes.Logos}>
                                                 <a href="https://www.linkedin.com/in/joseph-fallon-0763b95a/" target="_blank">
@@ -213,26 +250,37 @@ export const Home = (props: Props) => {
                                                     <img src={Github} alt="GitHub Logo" className={classes.GitHubLogo} />
                                                 </a>
                                             </div>
-                                        </div>
-                                        <a href={Resume} target='_blank' style={{ textDecoration: "none" }}>
+                                        </div> */}
+                                        {/* <div className={classes.tube}>
+                                                <a href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                                                    <img src={youtube} alt="YouTube Logo" />
+                                                </a>
+                                        </div> */}
+
+{/* --------------------------- */}
+
+                                        {/* <a href={Resume} target='_blank' style={{ textDecoration: "none" }}>
                                             <Button
                                                 variant="outlined"
                                                 size="large"
-                                                style={{ border: '2px solid', borderColor: 'white', textTransform: "none", fontSize: "14pt", width: "160px", color: 'black' }}
+                                                style={{ border: '2px solid', borderColor: 'white', textTransform: "none", fontSize: "14pt", width: "160px", color: 'black', backgroundImage: `url(${youtube})` }}
                                             >
-                                                My Resume
+                                            
                                             </Button>
-                                        </a>
-                                    </div>
+                                        </a> */}
+
+{/* --------------------------- */}
+
+
+                                    {/* </div> */}
                                 </div>
                             </Grid>
                             <Grid item sm={12} md={7} className={classes.about_text} sx={{ p: "10%" }}>
-                                <b>Hi. I'm JD. I am a Full-stack Software Engineer with a passion for finance and experience in business developement.</b>
                             </Grid>
                         </Grid>
                     </div>
-                <Projects title={'projects'} />
                 <AboutMe title={'aboutme'} />
+                <Projects title={'projects'} />
                 <Contact title={'contact'} />
             </main>
 

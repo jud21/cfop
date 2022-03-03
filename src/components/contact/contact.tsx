@@ -109,12 +109,12 @@ export const Contact = (props: Props) => {
         //     }
 // };
     
-    const url: string = `mailto:joe.d.fallon@gmail.com?subject="${form.subject}"&body="${form.message}"`
+    const url: string = `mailto:cryptoforoldpeople@gmail.com?subject="${form.subject}"&body="${form.message}"`
     const classes = useStyles();
     return (
         <div id="contact" className={classes.root}>
-            <h2 className={classes.new}>Contact me</h2>
-            <p className={classes.para}>Reach out with any inquiries or opportunities and I'll respond as soon as possible.</p>
+            <h2 className={classes.new}>Contact Us</h2>
+            <p className={classes.para}>Reach out with any questions and we'll respond as soon as possible.</p>
             <form action="" className={classes.form}>
                 <div className={classes.nameEmail}>
                     <TextField
@@ -155,7 +155,7 @@ export const Contact = (props: Props) => {
                     <a href={url}>Submit</a>
                 </Button>
                 <div className={classes.footer}>
-                    <p>© 2022 Joseph Fallon. All Rights Reserved</p>
+                    <p>© 2022 Crypto For Old People. All Rights Reserved.</p>
                 </div>
 
             </form>

@@ -22,6 +22,7 @@ import Parking from '../../assets/images/parking.jpg';
 import placeholderImage from '../../assets/images/placeholder.png';
 import Weather from '../../assets/images/weatherpic.jpeg';
 import myPort from '../../assets/images/portsite.png';
+import comingsoon from '../../assets/images/comingsoon.png';
 import { styled } from '@mui/material/styles';
 
 
@@ -50,7 +51,7 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'center'
+        justifyContent: 'center',
 
     },
     proj: {
@@ -77,25 +78,28 @@ export const Projects = (props: Props) => {
     return (
         <div id="projects" className={classes.root}>
 
-            {/* My Portfolio Site */}
+            {/* Blockchain----------------------------------------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={myPort}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            JD's Portfolio Site
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Blockchain Explained:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            HIGH-LEVEL Overview
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>React, TypeScript, JavaScript</h3>
+                            <h3>Coming March 19th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                        <Link href="https://github.com" target="_blank">
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -112,31 +116,34 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                A Portfolio website, rendered with React, displaying various projects of mine, and introducing myself as a person.
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* Crypto Portfolio Tracker */}
+            {/* Layer 1 ------------------------------------------------------------------------ */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={Crypto}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Crypto Portfolio Tracker
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Leading Layer 1 Blockchains:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            TVL, Volume, Wallets, and dApps TELL ALL
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>React, TypeScript, JavaScript</h3>
+                            <h3>Coming March 26th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                         <Link href="https://github.com/jud21/crypto_portfolio_tracker" target="_blank">
+                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -153,32 +160,34 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                A full-stack multi-page web application with a React frontend that provides users with the option to save the contents and quantity 
-                                of their crypto portfolio, and displays it's USD worth.
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* Weather App */}
+            {/* Layer 2-------------------------------------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={Weather}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Weather Application
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Leading Layer 2s:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Metrics KEEP NO SECRETS
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>JavaScript, HTML, CSS</h3>
+                            <h3>Coming April 2nd, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                         <Link href="https://github.com/jud21/Portfolio/tree/main/weekend%20project" target="_blank">
+                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -195,31 +204,34 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                A web application that will display the temperature high, temperature low, humidity, and forecast for the day based on the user's city.
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/*Investment Calculator */}
+            {/* Oracles ------------------------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={InvestCalc}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Investment Property Calculator
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Leading Oracles:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            CRYPTO's Most UNDERAPPRECIATED NECCESSITY
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Python</h3>
+                            <h3>Coming April 9th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                        <Link href="https://github.com/jud21/Portfolio/blob/main/Desktop/Operators-73/week-1/InvestCalc.py" target="_blank">
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -236,31 +248,34 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                A calculator program that takes various components of your life as inputs, to project potential profit in property investment scenarios.
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* Parking Garage */}
+            {/* Decentralization--------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={Parking}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Automated Parking Garage
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            The Importance of DECENTRALIZATION:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Crypto's Core Principles
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Python</h3>
+                            <h3>Coming April 16th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                        <Link href="https://github.com/jud21/Portfolio/blob/main/Desktop/Operators-73/week-1/Thursday_Lesson_Inclass-Updated2021.ipynb" target="_blank">
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -277,31 +292,34 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                A Python program designed to manage a parking garage.  Accounting for capacity and payment.
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* Shopping Cart */}
+            {/* NFTs -----------------------------------------------------------------*/}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={ShoppingCart}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Digital Shopping Cart
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            NFTs:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            HIGH-LEVEL OVERVIEW
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Python</h3>
+                            <h3>Coming April 23rd, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                         <Link href="https://github.com/jud21/shoppingcart/blob/main/cart/shoppingcart.py" target="_blank">
+                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -318,31 +336,34 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                A program that operates as a digital shopping cart with add item, delete item, show items, and quit shopping functionality.
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* Car Dealership Database */}
+            {/* DeFi---------------------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="140"
-                        image={Dealer}
+                        image={comingsoon}
                         alt="Project"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Car Dealership Database
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            DeFi:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            HIGH-LEVEL OVERVIEW
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>SQL</h3>
+                            <h3>Coming April 30th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                        <Link href="https://github.com/jud21/Portfolio/blob/main/Desktop/Operators-73/week-1/cardealership1" target="_blank">
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <GitHubIcon />
                             </IconButton>
@@ -359,7 +380,95 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                Designed an ERD for a car dealership and utilized it to build a database through PostgreSQL.
+                                ---Paragraph here---
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* NFT Series 1---------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            NFTs:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Generative Art | RENAISSANCE 2.0??
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming May 7th, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <GitHubIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                ---Paragraph here---
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* NFT Series 2---------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            NFTs:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            GameFi | Own Your Items
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming May 14th, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <GitHubIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                ---Paragraph here---
                             </Typography>
                         </CardContent>
                     </Collapse>
