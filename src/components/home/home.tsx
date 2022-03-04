@@ -11,8 +11,11 @@ import Resume from '../../assets/images/josephresume.png'
 import LinkedIn from '../../assets/images/link3.png';
 import Github from '../../assets/images/github.png';
 import space from '../../assets/images/newbackground.png';
-import pnglogo from '../../assets/images/pnglogo.png'
-import youtube from '../../assets/images/youtube.png'
+import pnglogo from '../../assets/images/pnglogo.png';
+import youtube from '../../assets/images/youtube.png';
+import tiktok from '../../assets/images/tiktok.png';
+import insta from '../../assets/images/instagram.png';
+import twitter from '../../assets/images/twitter.png'
 import { createMuiTheme } from '@mui/material/styles';
 import { Theme } from '@mui/material/styles'
 
@@ -165,9 +168,9 @@ const useStyles = makeStyles({
         width: '25px'
     },
     tube: {
-        borderRadius: '30px 30px 30px 30px',
-        width: '50px',
-        height: '50px',
+        borderRadius: '25px 25px 25px 25px',
+        width: '175px',
+        height: '60px',
         borderWidth: '1px',
         borderStyle: 'solid',
         borderColor: 'white',
@@ -175,6 +178,22 @@ const useStyles = makeStyles({
         justifyContent: 'space-around',
         alignItems: 'center',
         margin: '15px'
+    },
+    photoyou: {
+        height: '150px',
+        width: '160px'
+    },
+    phototik: {
+        height: '35px',
+        width: '125px'
+    },
+    photoinsta: {
+        height: '110px',
+        width: '225px'
+    },
+    phototwitter: {
+        height: '75px',
+        width: '125px'
     }
 });
 
@@ -238,45 +257,35 @@ export const Home = (props: Props) => {
                                             you could miss it.
                                         </h1>
                                     </div>
-                                    {/* <div className={classes.links_resume}>
-                                        <div className={classes.logo_adjust}>
-                                            <div className={classes.Logos}>
-                                                <a href="https://www.linkedin.com/in/joseph-fallon-0763b95a/" target="_blank">
-                                                    <img src={LinkedIn} alt="LinkedIn Logo" className={classes.LinkedInLogo} />
-                                                </a>
-                                            </div>
-                                            <div className={classes.Logos}>
-                                                <a href="https://github.com/jud21" target="_blank">
-                                                    <img src={Github} alt="GitHub Logo" className={classes.GitHubLogo} />
-                                                </a>
-                                            </div>
-                                        </div> */}
-                                        {/* <div className={classes.tube}>
-                                                <a href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                                                    <img src={youtube} alt="YouTube Logo" />
-                                                </a>
-                                        </div> */}
-
-{/* --------------------------- */}
-
-                                        {/* <a href={Resume} target='_blank' style={{ textDecoration: "none" }}>
-                                            <Button
-                                                variant="outlined"
-                                                size="large"
-                                                style={{ border: '2px solid', borderColor: 'white', textTransform: "none", fontSize: "14pt", width: "160px", color: 'black', backgroundImage: `url(${youtube})` }}
-                                            >
-                                            
-                                            </Button>
-                                        </a> */}
-
-{/* --------------------------- */}
-
-
-                                    {/* </div> */}
                                 </div>
                             </Grid>
                             <Grid item sm={12} md={7} className={classes.about_text} sx={{ p: "10%" }}>
                             </Grid>
+                        </Grid>
+                        <Grid container spacing={12}>
+                            <Grid item sm={12} md={9}></Grid>
+                                <div className={classes.pro_photo}>
+                                    <div className={classes.tube}>
+                                        <a href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                                            <img src={youtube} className={classes.photoyou} alt="YouTube Logo" />
+                                        </a>
+                                    </div>
+                                    <div className={classes.tube}>
+                                        <a href="https://www.tiktok.com/@cryptoforoldpeople" target="_blank">
+                                            <img src={tiktok} className={classes.phototik} alt="TikTok Logo" />
+                                        </a>
+                                    </div>
+                                    <div className={classes.tube}>
+                                        <a href="https://www.instagram.com/cryptooldpeople/" target="_blank">
+                                            <img src={insta} className={classes.photoinsta} alt="Instagram Logo" />
+                                        </a>
+                                    </div>
+                                    <div className={classes.tube}>
+                                        <a href="https://twitter.com/CryptoOldPeople" target="_blank">
+                                            <img src={twitter} className={classes.phototwitter} alt="Twitter Logo" />
+                                        </a>
+                                    </div>
+                                </div>
                         </Grid>
                     </div>
                 <AboutMe title={'aboutme'} />

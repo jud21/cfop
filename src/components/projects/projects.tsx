@@ -6,7 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import Link from '@mui/material/Link';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShareIcon from '@mui/icons-material/Share';
 import Typography from '@mui/material/Typography';
@@ -101,7 +101,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore
@@ -145,7 +145,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                          <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore
@@ -189,7 +189,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                          <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore 
@@ -233,7 +233,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore
@@ -277,7 +277,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link> 
                         <ExpandMore
@@ -321,7 +321,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                          <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore
@@ -365,7 +365,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore
@@ -409,7 +409,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore
@@ -453,7 +453,7 @@ export const Projects = (props: Props) => {
                     <CardActions disableSpacing>
                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
-                                <GitHubIcon />
+                                <YouTubeIcon />
                             </IconButton>
                         </Link>
                         <ExpandMore

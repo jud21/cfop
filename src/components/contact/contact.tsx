@@ -31,7 +31,7 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center',
         height: '500px',
-        backgroundImage: `url(${beach})`
+        background: 'linear-gradient(to right, #12214b, #ff6600)'
 
     },
     nameEmailFields: {
@@ -55,16 +55,18 @@ const useStyles = makeStyles({
     },
     footer:{
         margin: '30px auto',
-        color: '#F5F5F5'
+        color: '#12214b',
+        fontFamily: 'Chalkduster'
     },
     para:{
         marginTop: '2vh',
         fontFamily: 'fantasy',
-        color: '#F5F5F5'
+        color: '#12214b'
     },
     new: {
         marginTop: '2vh',
-        color: '#F5F5F5'
+        color: '#12214b',
+        fontFamily: 'Chalkduster'
     }
 
 });
