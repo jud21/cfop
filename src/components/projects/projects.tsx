@@ -116,7 +116,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -160,7 +160,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -204,7 +204,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -248,7 +248,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -292,7 +292,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -336,7 +336,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -380,7 +380,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -424,7 +424,7 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -468,7 +468,183 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                ---Paragraph here---
+                                Coming Soon!
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* NFT Series 3---------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            NFTs:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Simplified transfer of OWNERSHIP
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming May 21st, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <YouTubeIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                Coming Soon!
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* DeFi Series 1---------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            DeFi:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Exchanges and Liquidity Pools
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming May 28th, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <YouTubeIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                Coming Soon!
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* DeFi Series 2---------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            DeFi:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Lending Protocols
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming June 4th, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <YouTubeIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                Coming Soon!
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* DeFi Series 1---------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            DeFi:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Options Protocols- Leverage to the MAX
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming June 11th, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <YouTubeIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                Coming Soon!
                             </Typography>
                         </CardContent>
                     </Collapse>

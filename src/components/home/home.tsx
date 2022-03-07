@@ -177,7 +177,8 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
-        margin: '15px'
+        margin: '15px',
+        marginBottom: '25px'
     },
     photoyou: {
         height: '150px',
@@ -262,8 +263,8 @@ export const Home = (props: Props) => {
                             <Grid item sm={12} md={7} className={classes.about_text} sx={{ p: "10%" }}>
                             </Grid>
                         </Grid>
-                        <Grid container spacing={12}>
-                            <Grid item sm={12} md={9}></Grid>
+                        <Grid container spacing={95}>
+                            <Grid item sm={12} md={10}></Grid>
                                 <div className={classes.pro_photo}>
                                     <div className={classes.tube}>
                                         <a href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
