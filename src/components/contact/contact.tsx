@@ -54,7 +54,7 @@ const useStyles = makeStyles({
         justifyContent: 'space-between'
     },
     footer:{
-        margin: '30px auto',
+        margin: '10px auto',
         color: '#12214b',
         fontFamily: 'Chalkduster'
     },
@@ -156,6 +156,11 @@ export const Contact = (props: Props) => {
                 <Button variant="contained">
                     <a href={url}>Submit</a>
                 </Button>
+                <div className={classes.footer}>
+                    <p>
+                        🍻 <strong>Tip Jar:</strong> <code>cryptoforoldpeople.eth | <a target="_blank" href="https://www.buymeacoffee.com/cfop">Buy Me A Coffee</a></code>
+                    </p>
+                </div>
                 <div className={classes.footer}>
                     <p>© 2022 Crypto For Old People. All Rights Reserved.</p>
                 </div>

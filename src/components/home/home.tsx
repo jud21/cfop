@@ -6,11 +6,8 @@ import { HashLink } from 'react-router-hash-link';
 import { Contact, Projects, AboutMe } from '../../components';
 import { borderRadius } from '@material-ui/system';
 import Grid from '@mui/material/Grid';
-import JD from '../../assets/images/JD.jpeg';
-import Resume from '../../assets/images/josephresume.png'
-import LinkedIn from '../../assets/images/link3.png';
-import Github from '../../assets/images/github.png';
 import space from '../../assets/images/newbackground.png';
+import space2 from '../../assets/images/back3.png'
 import pnglogo from '../../assets/images/pnglogo.png';
 import youtube from '../../assets/images/youtube.png';
 import tiktok from '../../assets/images/tiktok.png';
@@ -83,7 +80,7 @@ const useStyles = makeStyles({
         position: 'absolute'
     },
     main_text: {
-        backgroundImage: `url(${space})`,
+        backgroundImage: `url(${space2})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -126,7 +123,8 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        color: "#ff6600",
     },
     about_text: {
         display: 'flex',
@@ -190,7 +188,7 @@ const useStyles = makeStyles({
     },
     photoinsta: {
         height: '110px',
-        width: '225px'
+        width: '200px'
     },
     phototwitter: {
         height: '75px',
@@ -240,6 +238,13 @@ export const Home = (props: Props) => {
                                     scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
                                 >Contact</HashLink>
                             </Grid>
+                            <Grid item xs={12} sm={12} md="auto" className={classes.link_in_grid}>
+                                <HashLink
+                                    to='/#contact'
+                                    className={classes.nav_a}
+                                    scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
+                                >Donate</HashLink>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -250,7 +255,7 @@ export const Home = (props: Props) => {
                             <Grid item sm={12} md={5}>
                                 <div className={classes.pro_photo}>
                                     <div className={classes.my_photo}>
-                                        <h1>Crypto moves pretty fast.
+                                        <h1 className={classes.my_photo2}>Crypto moves pretty fast.
                                         </h1>
                                     </div>
                                     <div>
@@ -263,9 +268,10 @@ export const Home = (props: Props) => {
                             <Grid item sm={12} md={7} className={classes.about_text} sx={{ p: "10%" }}>
                             </Grid>
                         </Grid>
-                        <Grid container spacing={95}>
+                        {/* <Grid container spacing={80}>
                             <Grid item sm={12} md={10}></Grid>
                                 <div className={classes.pro_photo}>
+                                    <h2>Subscribe to our Channels!</h2>
                                     <div className={classes.tube}>
                                         <a href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                                             <img src={youtube} className={classes.photoyou} alt="YouTube Logo" />
@@ -287,7 +293,7 @@ export const Home = (props: Props) => {
                                         </a>
                                     </div>
                                 </div>
-                        </Grid>
+                        </Grid> */}
                     </div>
                 <AboutMe title={'aboutme'} />
                 <Projects title={'projects'} />
