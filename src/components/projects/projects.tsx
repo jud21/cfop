@@ -137,7 +137,7 @@ export const Projects = (props: Props) => {
                             The Current Crypto Landscape
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 1st, 2022</h3>
+                            <h3>Coming May 23rd, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -181,7 +181,7 @@ export const Projects = (props: Props) => {
                             TVL, Volume, Wallets, and dApps TELL ALL
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 8th, 2022</h3>
+                            <h3>Coming May 30th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -225,7 +225,7 @@ export const Projects = (props: Props) => {
                             Metrics KEEP NO SECRETS
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 15th, 2022</h3>
+                            <h3>Coming June 6th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -269,7 +269,7 @@ export const Projects = (props: Props) => {
                             CRYPTO's Most UNDERAPPRECIATED NECCESSITY
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 22nd, 2022</h3>
+                            <h3>Coming June 13th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -313,7 +313,7 @@ export const Projects = (props: Props) => {
                             Crypto's Core Principles
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 29th, 2022</h3>
+                            <h3>Coming June 20th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -357,7 +357,7 @@ export const Projects = (props: Props) => {
                             HIGH-LEVEL OVERVIEW
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 5th, 2022</h3>
+                            <h3>Coming June 27th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -401,7 +401,7 @@ export const Projects = (props: Props) => {
                             HIGH-LEVEL OVERVIEW
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 12th, 2022</h3>
+                            <h3>Coming July 4th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -445,7 +445,7 @@ export const Projects = (props: Props) => {
                             How Do YOU Want To Store YOUR Crypto
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 19th, 2022</h3>
+                            <h3>Coming July 11th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -489,7 +489,7 @@ export const Projects = (props: Props) => {
                             METAMASK
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 26th, 2022</h3>
+                            <h3>Coming July 18th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -533,7 +533,7 @@ export const Projects = (props: Props) => {
                             Don't Fall For Their Tricks
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 3rd, 2022</h3>
+                            <h3>Coming July 25th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -577,7 +577,7 @@ export const Projects = (props: Props) => {
                             Why Some Tokens Have Value and Others Don't.
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 10th, 2022</h3>
+                            <h3>Coming August 1st, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -621,7 +621,7 @@ export const Projects = (props: Props) => {
                             Crypto's BIGGEST EVENT TO DATE
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 17th, 2022</h3>
+                            <h3>Coming August 8th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -665,7 +665,7 @@ export const Projects = (props: Props) => {
                             Generative Art | RENAISSANCE 2.0??
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 24th, 2022</h3>
+                            <h3>Coming August 15th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -709,7 +709,7 @@ export const Projects = (props: Props) => {
                             GameFi | Own Your Items
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 31st, 2022</h3>
+                            <h3>Coming August 22nd, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -753,7 +753,7 @@ export const Projects = (props: Props) => {
                             Simplified transfer of OWNERSHIP
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 7th, 2022</h3>
+                            <h3>Coming August 29th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -797,7 +797,7 @@ export const Projects = (props: Props) => {
                             Exchanges and Liquidity Pools
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 14th, 2022</h3>
+                            <h3>Coming September 5th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -841,7 +841,7 @@ export const Projects = (props: Props) => {
                             Lending Protocols
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 21st, 2022</h3>
+                            <h3>Coming September 12th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -885,7 +885,7 @@ export const Projects = (props: Props) => {
                             Options Protocols- Leverage to the MAX
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 28th, 2022</h3>
+                            <h3>Coming September 19th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
