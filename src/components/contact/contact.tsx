@@ -158,11 +158,11 @@ export const Contact = (props: Props) => {
                 </Button>
                 <div className={classes.footer}>
                     <p>
-                        🍻 <strong>Tip Jar:</strong> <code>cryptoforoldpeople.eth | <a target="_blank" href="https://www.buymeacoffee.com/cfop">Buy Me A Coffee</a></code>
+                        🍻 <strong>Tip Jar:</strong> <code>cryptoforthepeople.eth | <a target="_blank" href="https://www.buymeacoffee.com/cfop">Buy Me A Coffee</a></code>
                     </p>
                 </div>
                 <div className={classes.footer}>
-                    <p>© 2022 Crypto For Old People. All Rights Reserved.</p>
+                    <p>© 2022 Crypto For The People. All Rights Reserved.</p>
                 </div>
 
             </form>

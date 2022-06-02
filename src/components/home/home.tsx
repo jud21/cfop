@@ -8,6 +8,7 @@ import { borderRadius } from '@material-ui/system';
 import Grid from '@mui/material/Grid';
 import space from '../../assets/images/newbackground.png';
 import space2 from '../../assets/images/back3.png'
+import space3 from '../../assets/images/cftp1.png'
 import pnglogo from '../../assets/images/pnglogo.png';
 import youtube from '../../assets/images/youtube.png';
 import tiktok from '../../assets/images/tiktok.png';
@@ -80,7 +81,7 @@ const useStyles = makeStyles({
         position: 'absolute'
     },
     main_text: {
-        backgroundImage: `url(${space2})`,
+        backgroundImage: `url(${space3})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -205,7 +206,7 @@ export const Home = (props: Props) => {
                 <Grid container className={classes.navbar_container}>
                     <Grid item xs={12} sm={12} md={4} className={classes.logo}>
                         <h1>
-                            Crypto For Old People
+                            Crypto For The People
                         </h1>
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
@@ -259,7 +260,7 @@ export const Home = (props: Props) => {
                                         </h1>
                                     </div>
                                     <div>
-                                        <h1 className={classes.my_photo2}>If you don't stop and watch Crypto For Old People every other Monday, 
+                                        <h1 className={classes.my_photo2}>If you don't stop and watch Crypto For The People every other Monday, 
                                             you could miss it.
                                         </h1>
                                     </div>

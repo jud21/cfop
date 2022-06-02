@@ -22,6 +22,7 @@ import Parking from '../../assets/images/parking.jpg';
 import placeholderImage from '../../assets/images/placeholder.png';
 import Weather from '../../assets/images/weatherpic.jpeg';
 import myPort from '../../assets/images/portsite.png';
+import scphoto from '../../assets/images/scphoto.png'
 import comingsoon from '../../assets/images/comingsoon.png';
 import blockchain from '../../assets/images/blockchain.png';
 import { styled } from '@mui/material/styles';
@@ -93,7 +94,7 @@ export const Projects = (props: Props) => {
                             blockchain finally explained in a way you can understand
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>New Release!</h3>
+                            <h3>Released May, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -114,7 +115,48 @@ export const Projects = (props: Props) => {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph>
-                                What a blockchain is and why they're important.
+                                This episode covers what a blockchain is and why they're important.
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* Smart Contracts----------------------------------------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={scphoto}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            smart contracts finally explained in a way you can understand
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>New Release!</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/watch?v=GRZYPWyJ6Hg" target="_blank">
+                            <IconButton aria-label="github link">
+                                <YouTubeIcon />
+                            </IconButton>
+                        </Link>
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                This episode covers what a smart contract is, the potential uses of smart contracts, and the most popular smart contracts of today.
                             </Typography>
                         </CardContent>
                     </Collapse>
@@ -137,139 +179,7 @@ export const Projects = (props: Props) => {
                             The Current Crypto Landscape
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 23rd, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* Layer 1 ------------------------------------------------------------------------ */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Leading Layer 1 Blockchains:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            TVL, Volume, Wallets, and dApps TELL ALL
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming May 30th, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* Layer 2-------------------------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Leading Layer 2s:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Metrics KEEP NO SECRETS
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 6th, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore 
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* Oracles ------------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Leading Oracles:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            CRYPTO's Most UNDERAPPRECIATED NECCESSITY
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 13th, 2022</h3>
+                            <h3>Coming June 20th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -313,7 +223,7 @@ export const Projects = (props: Props) => {
                             Crypto's Core Principles
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 20th, 2022</h3>
+                            <h3>Coming July 11th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -340,7 +250,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* NFTs -----------------------------------------------------------------*/}
+            {/* Stable Coins--------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
@@ -351,21 +261,65 @@ export const Projects = (props: Props) => {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            NFTs Explained:
+                            On Stable Coins and Central Bank Digital Currencies:
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            HIGH-LEVEL OVERVIEW
+                            Is There A Better Way?
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming June 27th, 2022</h3>
+                            <h3>Coming August 1st, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                         <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
                             <IconButton aria-label="github link">
                                 <YouTubeIcon />
                             </IconButton>
-                        </Link>
+                        </Link> 
+                        <ExpandMore
+                            expand={expanded}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </ExpandMore>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>
+                                Coming Soon!
+                            </Typography>
+                        </CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+            {/* Law is Tech--------------------------------------------------- */}
+            <Card sx={cardStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={comingsoon}
+                        alt="Project"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            A Journey Back To 1546:
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
+                            Sometimes The Best Evolutions in Technology Aren't Technological Evolutions
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            <h3>Coming August 22nd, 2022</h3>
+                        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
+                            <IconButton aria-label="github link">
+                                <YouTubeIcon />
+                            </IconButton>
+                        </Link> 
                         <ExpandMore
                             expand={expanded}
                             onClick={handleExpandClick}
@@ -395,13 +349,13 @@ export const Projects = (props: Props) => {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            DeFi Explained:
+                            DeFi and Money Legos:
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            HIGH-LEVEL OVERVIEW
+                            A System That Works Together
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 4th, 2022</h3>
+                            <h3>Coming September 12th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -445,7 +399,7 @@ export const Projects = (props: Props) => {
                             How Do YOU Want To Store YOUR Crypto
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 11th, 2022</h3>
+                            <h3>Coming October 3rd, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -472,7 +426,7 @@ export const Projects = (props: Props) => {
                     </Collapse>
                 </CardActionArea>
             </Card>
-            {/* Wallets---------------------------------------------------------------- */}
+            {/* Tokenomics---------------------------------------------------------------- */}
             <Card sx={cardStyles}>
                 <CardActionArea>
                     <CardMedia
@@ -483,13 +437,13 @@ export const Projects = (props: Props) => {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            How To Set Up a Crypto Wallet:
+                            Tokenomics:
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            METAMASK
+                            Why Some Tokens Have Value and Others Don't
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 18th, 2022</h3>
+                            <h3>Coming October 24th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -533,95 +487,7 @@ export const Projects = (props: Props) => {
                             Don't Fall For Their Tricks
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming July 25th, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* Tokenomics---------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Tokenomics:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Why Some Tokens Have Value and Others Don't.
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 1st, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* Merge---------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            The ETHEREUM MERGE:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Crypto's BIGGEST EVENT TO DATE
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 8th, 2022</h3>
+                            <h3>Coming November 14th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -662,10 +528,10 @@ export const Projects = (props: Props) => {
                             NFTs:
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Generative Art | RENAISSANCE 2.0??
+                            A Jump Through Two Hoops
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 15th, 2022</h3>
+                            <h3>Coming December 5th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -709,183 +575,7 @@ export const Projects = (props: Props) => {
                             GameFi | Own Your Items
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 22nd, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* NFT Series 3---------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            NFTs:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Simplified transfer of OWNERSHIP
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming August 29th, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* DeFi Series 1---------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            DeFi:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Exchanges and Liquidity Pools
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming September 5th, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* DeFi Series 2---------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            DeFi:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Lending Protocols
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming September 12th, 2022</h3>
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                        <Link href="https://www.youtube.com/channel/UCgwXq49c5l1LfHgeP4DNpSw" target="_blank">
-                            <IconButton aria-label="github link">
-                                <YouTubeIcon />
-                            </IconButton>
-                        </Link>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography paragraph>
-                                Coming Soon!
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </CardActionArea>
-            </Card>
-            {/* DeFi Series 3---------------------------------------------------------------- */}
-            <Card sx={cardStyles}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={comingsoon}
-                        alt="Project"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            DeFi:
-                        </Typography>
-                        <Typography gutterBottom variant="h5" component="div" color='#12214b' fontFamily='Chalkduster'>
-                            Options Protocols- Leverage to the MAX
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <h3>Coming September 19th, 2022</h3>
+                            <h3>Coming December 26th, 2022</h3>
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>

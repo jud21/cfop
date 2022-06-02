@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { makeStyles } from '@mui/styles';
 import ourmission from '../../assets/images/ourmission.png'
+import newmission from '../../assets/images/newback1.png'
 import Grid from '@mui/material/Grid';
 import youtube from '../../assets/images/youtube.png';
 import tiktok from '../../assets/images/tiktok.png';
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
         padding: '30px',
     },
     my_photo: {
-        backgroundImage: `url(${ourmission})`,
+        backgroundImage: `url(${newmission})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
