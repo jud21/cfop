@@ -260,7 +260,7 @@ export const Home = (props: Props) => {
                                         </h1>
                                     </div>
                                     <div>
-                                        <h1 className={classes.my_photo2}>If you don't stop and watch Crypto For The People every other Monday, 
+                                        <h1 className={classes.my_photo2}>If you don't stop and watch Crypto For The People every third Monday, 
                                             you could miss it.
                                         </h1>
                                     </div>
